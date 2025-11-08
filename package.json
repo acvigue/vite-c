@@ -1,0 +1,47 @@
+{
+  "name": "@aidenvigue/vite-c",
+  "version": "0.1.0",
+  "git-repository": "https://github.com/acvigue/vite-c",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "description": "Convert vite powered static websites to a header file.",
+  "keywords": [
+    "vite",
+    "esp32",
+    "espressif",
+    "espidf",
+    "template",
+    "c",
+    "cpp"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "author": "Aiden Vigue",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vite": "4.x"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^20.12.7",
+    "ejs": "^3.1.10",
+    "rollup": "^3.0.0",
+    "mime-types": "^2.1.35",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
